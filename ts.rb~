@@ -1,0 +1,5 @@
+require 'rinda/tuplespace'
+$ts = Rinda::TupleSpace.new
+DRb.start_service
+puts DRb.uri
+DRb.thread.join
